@@ -1,0 +1,23 @@
+{
+  "name": "data_visualisation_tpa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "visu.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hassenkhalifa/Data_Visualisation_TPA.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hassenkhalifa/Data_Visualisation_TPA/issues"
+  },
+  "homepage": "https://github.com/hassenkhalifa/Data_Visualisation_TPA#readme",
+  "dependencies": {
+    "hive-driver": "^0.2.0",
+    "mysql": "^2.18.1"
+  }
+}
