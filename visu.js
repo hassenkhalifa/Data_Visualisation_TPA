@@ -4,10 +4,13 @@ const client = new hive.HiveClient(
     TCLIService,
     TCLIService_types
 );
+const utils = new hive.HiveUtils(
+    TCLIService_types
+);
 
 client.connect(
     {
-        host: '127.0.0.1',
+        host: 'localhost',
         port: 10000
     },
     new hive.connections.TcpConnection(),
@@ -23,7 +26,25 @@ client.connect(
         TCLIService_types.TGetInfoType.CLI_DBMS_VER
     );
 
-    console.log(response.getValue());
+    const useDBOperation = await session.executeStatement(
+        'USE mongo_tpa', { runAsync: true }
+    );
+    const showTablesOperation = await session.executeStatement(
+        'SELECT * FROM catalogue_mongo LIMIT 3', { runAsync: true }
+    );
+    await utils.waitUntilReady(useDBOperation, false, () => {});
+    await useDBOperation.close();
+    
+    await utils.waitUntilReady(showTablesOperation, false, () => {});
+    await utils.fetchAll(showTablesOperation);
+    await showTablesOperation.close();
+    
+    const result = utils.getResult(showTablesOperation).getValue();
+    
+    console.log(JSON.stringify(result, null, '\t'));
+
+    await session.close();
+    await client.close();
 
 }).catch(error => {
     console.log(error);
@@ -34,4 +55,10 @@ pour crée un utilisateur dans la vm
 sudo -i
 useradd -ou 0 -g 0 admin
 passwd admin
+hassenkhalifa
+hassenkhalifa
+
+ajouter dans le vagrant file
+config.vm.network "forwarded_port", guest: 10000, host: 10000, protocol: "tcp" , auto_correct: true
+  config.vm.network "forwarded_port", guest: 10000, host: 10000, protocol: "udp" , auto_correct: true
 */
