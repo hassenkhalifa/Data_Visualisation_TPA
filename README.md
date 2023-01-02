@@ -54,13 +54,26 @@
 
 * Hierarchic (treemap,sunburst,...) 
     * Circle Map (https://datavizcatalogue.com/methods/circle_packing.html) -> Concessionaire (Identify)
+      * A -> Marque
+      * B/C -> NbPortes
+      * D/... -> Situation Familiales
+
     * Treemap (https://datavizcatalogue.com/methods/treemap.html) -> Vendeur (Identify)
-    
+      * A -> Nombre d'enfants
+      * B/C -> NbPlaces
+      * D/E/F -> nombres d'achat d'une couleur
+
 * Comparisons 
-  * Pie Chart (https://datavizcatalogue.com/methods/pie_chart.html) -> Vendeurs
+  * Pie Chart (https://datavizcatalogue.com/methods/pie_chart.html) -> Vendeur
+    * le client: Sexe
+    * On doit savoir le nombre d'achat par sexe
+    * Pour ce nombre d'achat on définit le % de chaque marque
 
 * Distribution
   * Multi-set Bar Chart (https://datavizcatalogue.com/methods/multiset_barchart.html) -> Concessionaire 
+    * X => Category A : Marque
+    * X => Sous category A : Situation familiales
+    * Y => Nombre d'achat d'une marque par une situation familiales
 
 ##### Websites that can help us:
 
