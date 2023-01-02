@@ -1,4 +1,8 @@
 const hive = require('hive-driver');
+const express = require('express');
+const PORT = 8080;
+
+
 const { TCLIService, TCLIService_types } = hive.thrift;
 const client = new hive.HiveClient(
     TCLIService,
@@ -10,13 +14,13 @@ const utils = new hive.HiveUtils(
 
 client.connect(
     {
-        host: 'localhost',
+        host: '127.0.0.1',
         port: 10000
     },
     new hive.connections.TcpConnection(),
     new hive.auth.PlainTcpAuthentication({
-        username: 'admin',
-        password: 'hassenkhalifa'
+        username: 'oussama',
+        password: 'samiasamia'
     })
 ).then(async client => {
     const session = await client.openSession({
@@ -27,10 +31,10 @@ client.connect(
     );
 
     const useDBOperation = await session.executeStatement(
-        'USE mongo_tpa', { runAsync: true }
+        'USE lake_gr7', { runAsync: true }
     );
     const showTablesOperation = await session.executeStatement(
-        'SELECT * FROM catalogue_mongo LIMIT 3', { runAsync: true }
+        'SELECT * FROM catalogue_complete_hdfs_h_ext LIMIT 3', { runAsync: true }
     );
     await utils.waitUntilReady(useDBOperation, false, () => {});
     await useDBOperation.close();
@@ -49,6 +53,12 @@ client.connect(
 }).catch(error => {
     console.log(error);
 });
+
+
+app.listen(PORT, () => {
+    console.log('Server app listening on port ' + PORT);
+});
+
 
 /*
 pour crée un utilisateur dans la vm 
