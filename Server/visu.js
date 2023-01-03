@@ -55,9 +55,6 @@ client.connect(
 });
 
 
-app.listen(PORT, () => {
-    console.log('Server app listening on port ' + PORT);
-});
 
 
 /*
@@ -69,6 +66,6 @@ hassenkhalifa
 hassenkhalifa
 
 ajouter dans le vagrant file
-config.vm.network "forwarded_port", guest: 10000, host: 10000, protocol: "tcp" , auto_correct: true
+  config.vm.network "forwarded_port", guest: 10000, host: 10000, protocol: "tcp" , auto_correct: true
   config.vm.network "forwarded_port", guest: 10000, host: 10000, protocol: "udp" , auto_correct: true
 */
