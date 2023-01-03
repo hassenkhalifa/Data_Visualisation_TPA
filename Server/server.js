@@ -22,7 +22,13 @@ const hive_password = 'samiasamia';
 /**/
 
 app.get('/', (req, res) => {
-    const sql = 'SELECT marque as name,count(*) as value FROM lake_gr7.immatriculation_processed INNER JOIN lake_gr7.client_processed ON trim(immatriculation_processed.immatriculation) = trim(client_processed.immatriculation) WHERE sexe LIKE \'%M%\' GROUP BY marque,sexe';
+
+    const sexe = req.query.sexe;
+
+    console.log(sexe);
+
+
+    const sql = `SELECT marque as name,count(*) as value FROM lake_gr7.immatriculation_processed INNER JOIN lake_gr7.client_processed ON trim(immatriculation_processed.immatriculation) = trim(client_processed.immatriculation) WHERE sexe LIKE '%${sexe}%' GROUP BY marque,sexe`;
 
     client.connect(
         {

@@ -1,10 +1,18 @@
 // A $( document ).ready() block.
 $(document).ready(function () {
     getPieChart();
+
+
+    /*Events Listener*/
+    $( "#pie-chart-sexe" ).change(function() {
+        getPieChart();
+    });
 });
 
 const getPieChartData = async () => {
-    const response = await fetch('http://localhost:8080/');
+
+    const sexe = $('#pie-chart-sexe').val();
+    const response = await fetch('http://localhost:8080/?sexe=' + sexe);
     const data = await response.json();
     return data;
     /*.then(response => response.text())
@@ -65,11 +73,11 @@ const getPieChart = async () => {
     let infos_html = '';
 
     data.map(info => {
-        infos_html.concat(`
+        infos_html += `
             <div style="text-align: center;display: flex;align-content: center;flex-direction: column;align-items: center;margin: 0 10px">
                 <div style="width: 20px;height: 20px;background-color: ${info.color} "></div>
                 <div>${info.name} (${(info.value / total * 100).toFixed(1)}%)</div>
-            </div>`)
+            </div>`;
     })
 
     let html = `<div style="display: flex;justify-content: center;">${infos_html}</div>`;
