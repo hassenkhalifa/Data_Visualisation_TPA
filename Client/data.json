@@ -1,0 +1,536 @@
+[
+    {
+        "marque": "Audi ",
+        "nbportes": 5,
+        "situationfamiliale": "CELIBATAIRE ",
+        "nombre_ventes": 20621
+    },
+    {
+        "marque": "Audi ",
+        "nbportes": 5,
+        "situationfamiliale": "EN COUPLE ",
+        "nombre_ventes": 7847
+    },
+    {
+        "marque": "Audi ",
+        "nbportes": 5,
+        "situationfamiliale": "MARIE ",
+        "nombre_ventes": 71
+    },
+    {
+        "marque": "Audi ",
+        "nbportes": 5,
+        "situationfamiliale": "SEUL ",
+        "nombre_ventes": 212
+    },
+    {
+        "marque": "BMW ",
+        "nbportes": 5,
+        "situationfamiliale": "CELIBATAIRE ",
+        "nombre_ventes": 3802
+    },
+    {
+        "marque": "BMW ",
+        "nbportes": 5,
+        "situationfamiliale": "DIVORCEE ",
+        "nombre_ventes": 7
+    },
+    {
+        "marque": "BMW ",
+        "nbportes": 5,
+        "situationfamiliale": "EN COUPLE ",
+        "nombre_ventes": 23457
+    },
+    {
+        "marque": "BMW ",
+        "nbportes": 5,
+        "situationfamiliale": "MARIE ",
+        "nombre_ventes": 252
+    },
+    {
+        "marque": "BMW ",
+        "nbportes": 5,
+        "situationfamiliale": "SEUL ",
+        "nombre_ventes": 1281
+    },
+    {
+        "marque": "Dacia ",
+        "nbportes": 5,
+        "situationfamiliale": "CELIBATAIRE ",
+        "nombre_ventes": 1360
+    },
+    {
+        "marque": "Dacia ",
+        "nbportes": 5,
+        "situationfamiliale": "EN COUPLE ",
+        "nombre_ventes": 1
+    },
+    {
+        "marque": "Dacia ",
+        "nbportes": 5,
+        "situationfamiliale": "SEUL ",
+        "nombre_ventes": 12
+    },
+    {
+        "marque": "Daihatsu ",
+        "nbportes": 3,
+        "situationfamiliale": "CELIBATAIRE ",
+        "nombre_ventes": 1329
+    },
+    {
+        "marque": "Daihatsu ",
+        "nbportes": 3,
+        "situationfamiliale": "EN COUPLE ",
+        "nombre_ventes": 787
+    },
+    {
+        "marque": "Daihatsu ",
+        "nbportes": 3,
+        "situationfamiliale": "MARIE ",
+        "nombre_ventes": 12
+    },
+    {
+        "marque": "Daihatsu ",
+        "nbportes": 3,
+        "situationfamiliale": "SEUL ",
+        "nombre_ventes": 17
+    },
+    {
+        "marque": "Fiat ",
+        "nbportes": 5,
+        "situationfamiliale": "CELIBATAIRE ",
+        "nombre_ventes": 5
+    },
+    {
+        "marque": "Fiat ",
+        "nbportes": 5,
+        "situationfamiliale": "DIVORCEE ",
+        "nombre_ventes": 9
+    },
+    {
+        "marque": "Fiat ",
+        "nbportes": 5,
+        "situationfamiliale": "EN COUPLE ",
+        "nombre_ventes": 6527
+    },
+    {
+        "marque": "Fiat ",
+        "nbportes": 5,
+        "situationfamiliale": "MARIE ",
+        "nombre_ventes": 73
+    },
+    {
+        "marque": "Fiat ",
+        "nbportes": 5,
+        "situationfamiliale": "SEUL ",
+        "nombre_ventes": 919
+    },
+    {
+        "marque": "Ford ",
+        "nbportes": 5,
+        "situationfamiliale": "CELIBATAIRE ",
+        "nombre_ventes": 8
+    },
+    {
+        "marque": "Ford ",
+        "nbportes": 5,
+        "situationfamiliale": "DIVORCEE ",
+        "nombre_ventes": 11
+    },
+    {
+        "marque": "Ford ",
+        "nbportes": 5,
+        "situationfamiliale": "EN COUPLE ",
+        "nombre_ventes": 6630
+    },
+    {
+        "marque": "Ford ",
+        "nbportes": 5,
+        "situationfamiliale": "MARIE ",
+        "nombre_ventes": 66
+    },
+    {
+        "marque": "Ford ",
+        "nbportes": 5,
+        "situationfamiliale": "SEUL ",
+        "nombre_ventes": 900
+    },
+    {
+        "marque": "Jaguar ",
+        "nbportes": 5,
+        "situationfamiliale": "CELIBATAIRE ",
+        "nombre_ventes": 14
+    },
+    {
+        "marque": "Jaguar ",
+        "nbportes": 5,
+        "situationfamiliale": "DIVORCEE ",
+        "nombre_ventes": 20
+    },
+    {
+        "marque": "Jaguar ",
+        "nbportes": 5,
+        "situationfamiliale": "EN COUPLE ",
+        "nombre_ventes": 16238
+    },
+    {
+        "marque": "Jaguar ",
+        "nbportes": 5,
+        "situationfamiliale": "MARIE ",
+        "nombre_ventes": 180
+    },
+    {
+        "marque": "Jaguar ",
+        "nbportes": 5,
+        "situationfamiliale": "SEUL ",
+        "nombre_ventes": 2286
+    },
+    {
+        "marque": "Kia ",
+        "nbportes": 5,
+        "situationfamiliale": "CELIBATAIRE ",
+        "nombre_ventes": 1362
+    },
+    {
+        "marque": "Kia ",
+        "nbportes": 5,
+        "situationfamiliale": "EN COUPLE ",
+        "nombre_ventes": 838
+    },
+    {
+        "marque": "Kia ",
+        "nbportes": 5,
+        "situationfamiliale": "MARIE ",
+        "nombre_ventes": 12
+    },
+    {
+        "marque": "Kia ",
+        "nbportes": 5,
+        "situationfamiliale": "SEUL ",
+        "nombre_ventes": 10
+    },
+    {
+        "marque": "Lancia ",
+        "nbportes": 3,
+        "situationfamiliale": "CELIBATAIRE ",
+        "nombre_ventes": 755
+    },
+    {
+        "marque": "Lancia ",
+        "nbportes": 3,
+        "situationfamiliale": "EN COUPLE ",
+        "nombre_ventes": 450
+    },
+    {
+        "marque": "Lancia ",
+        "nbportes": 3,
+        "situationfamiliale": "MARIE ",
+        "nombre_ventes": 3
+    },
+    {
+        "marque": "Lancia ",
+        "nbportes": 3,
+        "situationfamiliale": "SEUL ",
+        "nombre_ventes": 4
+    },
+    {
+        "marque": "Mercedes ",
+        "nbportes": 5,
+        "situationfamiliale": "CELIBATAIRE ",
+        "nombre_ventes": 4497
+    },
+    {
+        "marque": "Mercedes ",
+        "nbportes": 5,
+        "situationfamiliale": "DIVORCEE ",
+        "nombre_ventes": 6
+    },
+    {
+        "marque": "Mercedes ",
+        "nbportes": 5,
+        "situationfamiliale": "EN COUPLE ",
+        "nombre_ventes": 9601
+    },
+    {
+        "marque": "Mercedes ",
+        "nbportes": 5,
+        "situationfamiliale": "MARIE ",
+        "nombre_ventes": 96
+    },
+    {
+        "marque": "Mercedes ",
+        "nbportes": 5,
+        "situationfamiliale": "SEUL ",
+        "nombre_ventes": 586
+    },
+    {
+        "marque": "Mini ",
+        "nbportes": 5,
+        "situationfamiliale": "CELIBATAIRE ",
+        "nombre_ventes": 998
+    },
+    {
+        "marque": "Mini ",
+        "nbportes": 5,
+        "situationfamiliale": "EN COUPLE ",
+        "nombre_ventes": 565
+    },
+    {
+        "marque": "Mini ",
+        "nbportes": 5,
+        "situationfamiliale": "MARIE ",
+        "nombre_ventes": 7
+    },
+    {
+        "marque": "Mini ",
+        "nbportes": 5,
+        "situationfamiliale": "SEUL ",
+        "nombre_ventes": 10
+    },
+    {
+        "marque": "Nissan ",
+        "nbportes": 5,
+        "situationfamiliale": "CELIBATAIRE ",
+        "nombre_ventes": 1366
+    },
+    {
+        "marque": "Nissan ",
+        "nbportes": 5,
+        "situationfamiliale": "DIVORCEE ",
+        "nombre_ventes": 6
+    },
+    {
+        "marque": "Nissan ",
+        "nbportes": 5,
+        "situationfamiliale": "EN COUPLE ",
+        "nombre_ventes": 4937
+    },
+    {
+        "marque": "Nissan ",
+        "nbportes": 5,
+        "situationfamiliale": "MARIE ",
+        "nombre_ventes": 42
+    },
+    {
+        "marque": "Nissan ",
+        "nbportes": 5,
+        "situationfamiliale": "SEUL ",
+        "nombre_ventes": 422
+    },
+    {
+        "marque": "Peugeot ",
+        "nbportes": 5,
+        "situationfamiliale": "CELIBATAIRE ",
+        "nombre_ventes": 5936
+    },
+    {
+        "marque": "Peugeot ",
+        "nbportes": 5,
+        "situationfamiliale": "EN COUPLE ",
+        "nombre_ventes": 3603
+    },
+    {
+        "marque": "Peugeot ",
+        "nbportes": 5,
+        "situationfamiliale": "MARIE ",
+        "nombre_ventes": 30
+    },
+    {
+        "marque": "Peugeot ",
+        "nbportes": 5,
+        "situationfamiliale": "SEUL ",
+        "nombre_ventes": 63
+    },
+    {
+        "marque": "Renault ",
+        "nbportes": 5,
+        "situationfamiliale": "CELIBATAIRE ",
+        "nombre_ventes": 5079
+    },
+    {
+        "marque": "Renault ",
+        "nbportes": 5,
+        "situationfamiliale": "DIVORCEE ",
+        "nombre_ventes": 13
+    },
+    {
+        "marque": "Renault ",
+        "nbportes": 5,
+        "situationfamiliale": "EN COUPLE ",
+        "nombre_ventes": 18109
+    },
+    {
+        "marque": "Renault ",
+        "nbportes": 5,
+        "situationfamiliale": "MARIE ",
+        "nombre_ventes": 164
+    },
+    {
+        "marque": "Renault ",
+        "nbportes": 5,
+        "situationfamiliale": "SEUL ",
+        "nombre_ventes": 1546
+    },
+    {
+        "marque": "Saab ",
+        "nbportes": 5,
+        "situationfamiliale": "CELIBATAIRE ",
+        "nombre_ventes": 11
+    },
+    {
+        "marque": "Saab ",
+        "nbportes": 5,
+        "situationfamiliale": "DIVORCEE ",
+        "nombre_ventes": 14
+    },
+    {
+        "marque": "Saab ",
+        "nbportes": 5,
+        "situationfamiliale": "EN COUPLE ",
+        "nombre_ventes": 7271
+    },
+    {
+        "marque": "Saab ",
+        "nbportes": 5,
+        "situationfamiliale": "MARIE ",
+        "nombre_ventes": 71
+    },
+    {
+        "marque": "Saab ",
+        "nbportes": 5,
+        "situationfamiliale": "SEUL ",
+        "nombre_ventes": 1020
+    },
+    {
+        "marque": "Seat ",
+        "nbportes": 5,
+        "situationfamiliale": "CELIBATAIRE ",
+        "nombre_ventes": 3
+    },
+    {
+        "marque": "Seat ",
+        "nbportes": 5,
+        "situationfamiliale": "DIVORCEE ",
+        "nombre_ventes": 4
+    },
+    {
+        "marque": "Seat ",
+        "nbportes": 5,
+        "situationfamiliale": "EN COUPLE ",
+        "nombre_ventes": 1850
+    },
+    {
+        "marque": "Seat ",
+        "nbportes": 5,
+        "situationfamiliale": "MARIE ",
+        "nombre_ventes": 22
+    },
+    {
+        "marque": "Seat ",
+        "nbportes": 5,
+        "situationfamiliale": "SEUL ",
+        "nombre_ventes": 254
+    },
+    {
+        "marque": "Skoda ",
+        "nbportes": 5,
+        "situationfamiliale": "CELIBATAIRE ",
+        "nombre_ventes": 4
+    },
+    {
+        "marque": "Skoda ",
+        "nbportes": 5,
+        "situationfamiliale": "DIVORCEE ",
+        "nombre_ventes": 2
+    },
+    {
+        "marque": "Skoda ",
+        "nbportes": 5,
+        "situationfamiliale": "EN COUPLE ",
+        "nombre_ventes": 3070
+    },
+    {
+        "marque": "Skoda ",
+        "nbportes": 5,
+        "situationfamiliale": "MARIE ",
+        "nombre_ventes": 38
+    },
+    {
+        "marque": "Skoda ",
+        "nbportes": 5,
+        "situationfamiliale": "SEUL ",
+        "nombre_ventes": 177
+    },
+    {
+        "marque": "Volkswagen ",
+        "nbportes": 3,
+        "situationfamiliale": "CELIBATAIRE ",
+        "nombre_ventes": 5892
+    },
+    {
+        "marque": "Volkswagen ",
+        "nbportes": 3,
+        "situationfamiliale": "EN COUPLE ",
+        "nombre_ventes": 3583
+    },
+    {
+        "marque": "Volkswagen ",
+        "nbportes": 3,
+        "situationfamiliale": "MARIE ",
+        "nombre_ventes": 40
+    },
+    {
+        "marque": "Volkswagen ",
+        "nbportes": 3,
+        "situationfamiliale": "SEUL ",
+        "nombre_ventes": 66
+    },
+    {
+        "marque": "Volkswagen ",
+        "nbportes": 5,
+        "situationfamiliale": "CELIBATAIRE ",
+        "nombre_ventes": 5817
+    },
+    {
+        "marque": "Volkswagen ",
+        "nbportes": 5,
+        "situationfamiliale": "EN COUPLE ",
+        "nombre_ventes": 13
+    },
+    {
+        "marque": "Volkswagen ",
+        "nbportes": 5,
+        "situationfamiliale": "SEUL ",
+        "nombre_ventes": 55
+    },
+    {
+        "marque": "Volvo ",
+        "nbportes": 5,
+        "situationfamiliale": "CELIBATAIRE ",
+        "nombre_ventes": 8
+    },
+    {
+        "marque": "Volvo ",
+        "nbportes": 5,
+        "situationfamiliale": "DIVORCEE ",
+        "nombre_ventes": 8
+    },
+    {
+        "marque": "Volvo ",
+        "nbportes": 5,
+        "situationfamiliale": "EN COUPLE ",
+        "nombre_ventes": 11718
+    },
+    {
+        "marque": "Volvo ",
+        "nbportes": 5,
+        "situationfamiliale": "MARIE ",
+        "nombre_ventes": 125
+    },
+    {
+        "marque": "Volvo ",
+        "nbportes": 5,
+        "situationfamiliale": "SEUL ",
+        "nombre_ventes": 647
+    }
+]
