@@ -12,7 +12,7 @@ $(document).ready(function () {
 const getPieChartData = async () => {
 
     const sexe = $('#pie-chart-sexe').val();
-    const response = await fetch('http://localhost:8080/?sexe=' + sexe);
+    const response = await fetch('http://localhost:8080/piechart?sexe=' + sexe);
     const data = await response.json();
     return data;
     /*.then(response => response.text())
@@ -23,6 +23,9 @@ const getPieChartData = async () => {
 }
 
 const getPieChart = async () => {
+    $("#pie-chart").empty();
+    $("#pie-chart-footer").empty();
+
     let data = await getPieChartData();
 
 

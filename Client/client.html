@@ -21,6 +21,11 @@
         <div id="pie-chart-footer"></div>
     </div>
 
+    <div class="tree-map-container">
+        <h1>Tree Map</h1>
+        <div id="treemap"></div>
+    </div>
+
 </div>
 
 
@@ -30,6 +35,27 @@
 <script src="https://d3js.org/d3.v6.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
         integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
-<script src="./assets/js/pie_chart.js"></script>
+<!--<script src="./assets/js/pie_chart.js"></script>-->
+<script>
+    // Define your data
+    var data = {
+        name: "root",
+        children: [
+            {
+                name: "A",
+                value: 100
+            },
+            {
+                name: "B",
+                value: 50
+            },
+            {
+                name: "C",
+                value: 25
+            }
+        ]
+    };
 
+
+</script>
 </html>
