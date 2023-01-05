@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 
 /*HIVE VARIABLES*/
-const { TCLIService, TCLIService_types } = hive.thrift;
+const {TCLIService, TCLIService_types} = hive.thrift;
 const client = new hive.HiveClient(
     TCLIService,
     TCLIService_types
@@ -43,7 +43,7 @@ app.get('/piechart', (req, res) => {
             client_protocol: TCLIService_types.TProtocolVersion.HIVE_CLI_SERVICE_PROTOCOL_V10
         });
         const showTablesOperation = await session.executeStatement(
-            sql, { runAsync: true }
+            sql, {runAsync: true}
         );
         await utils.waitUntilReady(useDBOperation, false, () => {
         });
@@ -86,7 +86,7 @@ app.get('/circlemap', (req, res) => {
         });
 
         const showTablesOperation = await session.executeStatement(
-            sql, { runAsync: true }
+            sql, {runAsync: true}
         );
 
         await utils.waitUntilReady(showTablesOperation, false, () => {
@@ -98,6 +98,50 @@ app.get('/circlemap', (req, res) => {
 
 
         res.send(JSON.stringify(result));
+
+
+        await session.close();
+        await client.close();
+    });
+});
+
+
+app.get('/treemap', (req, res) => {
+
+    console.log("here ");
+    const sql = `SELECT nbEnfantsAcharge,nbplaces,couleur,count(*) as nombre_ventes FROM lake_gr7.immatriculation_processed INNER JOIN lake_gr7.client_processed ON trim(immatriculation_processed.immatriculation) = trim(client_processed.immatriculation) GROUP BY nbEnfantsAcharge,nbplaces,couleur`;
+
+    client.connect(
+        {
+            host: host,
+            port: port
+        },
+        new hive.connections.TcpConnection(),
+        new hive.auth.PlainTcpAuthentication({
+            username: hive_username,
+            password: hive_password
+        })
+    ).then(async client => {
+        const session = await client.openSession({
+            client_protocol: TCLIService_types.TProtocolVersion.HIVE_CLI_SERVICE_PROTOCOL_V10
+        });
+
+        const showTablesOperation = await session.executeStatement(
+            sql, {runAsync: true}
+        );
+
+        await utils.waitUntilReady(showTablesOperation, false, () => {
+        });
+        await utils.fetchAll(showTablesOperation);
+        await showTablesOperation.close();
+
+        const result = utils.getResult(showTablesOperation).getValue();
+
+
+
+
+        res.send(JSON.stringify(result));
+
 
 
         await session.close();

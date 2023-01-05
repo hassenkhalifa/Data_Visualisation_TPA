@@ -5,6 +5,7 @@
     <title>My Page</title>
 
     <link rel="stylesheet" type="text/css" href="./assets/css/pie_chart.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/tree_map.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/circle_chart.css">
 
 </head>
@@ -31,8 +32,11 @@
             <div id="treemap"></div>
         </div>
 
-        <h1>Circle Chart</h1>
-        <svg width="960" height="960"></svg>
+        <div class="tree-map-container">
+            <h1>Circle Chart</h1>
+            <svg width="960" height="960"></svg>
+        </div>
+
     </div>
 
 
@@ -42,9 +46,17 @@
 <!--Scripts Section-->
 <script src="https://d3js.org/d3.v6.min.js"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
+<!-- -->
 <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
     integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
 <!-- <script src="./assets/js/pie_chart.js"></script> -->
-<!-- <script src="./assets/js/circle_map.js"></script> -->
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-core.min.js"></script>
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-treemap.min.js"></script>
+<script src="./assets/js/tree_map.js"></script>
+
+
+<!--
+ <script src="./assets/js/circle_map.js"></script>
+-->
 
 </html>
